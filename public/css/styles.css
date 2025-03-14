@@ -1,0 +1,70 @@
+.navigation {
+    display: flex;  /* Arrange links horizontally */
+    justify-content: space-between;  /* Distribute links evenly */
+    padding: 10px 20px;  /* Add padding for spacing */
+    background-color: #f0f0f0;
+    margin: 30px 20px;  /* Light gray background */
+  }
+  
+  .navigation a {
+    text-decoration: none;  /* Remove underline from links */
+    color: black;  /* Black text color */
+    padding: 5px 10px;  /* Padding for links */
+    border-radius: 5px;  /* Rounded corners for links */
+  }
+  .navigation a:nth-child(1),
+.navigation a:nth-child(2) {  /* Target first two links (Home & About) */
+  flex: 1;  /* Make them take up equal space */
+  text-align: center;  /* Center text within the links */
+}
+
+.navigation a:nth-child(3),  /* Target third link (Sign In) */
+.navigation a:nth-child(4) {  /* Target fourth link (Register) */
+  background-color: #32CD32;  /* Green color for initial state */
+  color: white;
+  margin-right: 10px;
+  transition: background-color 0.3s ease-in-out;  /* Add transition effect */
+}
+
+.navigation a:nth-child(3):hover,  /* Hover effect for Sign In */
+.navigation a:nth-child(4):hover {  /* Hover effect for Register */
+  background-color: #228B22;  /* Darker green on hover */
+}
+  .navigation a:hover {  /* Style on hover */
+    background-color: #e0e0e0;  /* Slightly darker background */
+  }
+  
+  /* Styles for hero section */
+  .hero-section {
+    
+    text-align: center;  /* Center text alignment */
+    padding: 50px;  /* Add padding for spacing */
+  }
+  
+  .hero-section h1 {
+    font-size: 2em;  /* Increase font size for heading */
+    margin-bottom: 10px;  /* Add space below heading */
+  }
+  
+  .hero-section h2 {
+    font-size: 1.5em;  /* Adjust font size for subheading */
+    margin-bottom: 20px;  /* Add space below subheading */
+  }
+  
+  .hero-section button {
+    padding: 10px 20px;  /* Padding for buttons */
+    margin: 5px;  /* Add space between buttons */
+    border: none;  /* Remove border from buttons */
+    border-radius: 5px;  /* Rounded corners for buttons */
+    font-weight: bold;  /* Bold font for buttons */
+  }
+  
+  .hero-section button:first-child {  /* Style for first button */
+    background-color: #007bff;  /* Blue color */
+    color: white;  /* White text */
+  }
+  
+  .hero-section button:last-child {  /* Style for second button */
+    background-color: #333;  /* Dark gray color */
+    color: white;  /* White text */
+  }
